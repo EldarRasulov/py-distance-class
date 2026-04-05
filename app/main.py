@@ -40,7 +40,6 @@ class Distance:
             return Distance(round(self.km / other, 2))
         return NotImplemented
 
-    # Сравнения возвращают bool
     def __eq__(self, other: float) -> bool:
         if isinstance(other, Distance):
             return self.km == other.km
